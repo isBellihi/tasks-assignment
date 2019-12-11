@@ -1,0 +1,20 @@
+version: "2.1"
+
+services:
+  tasks-assignment:
+    container_name: tasks-assignment
+    image: tasks-assignment
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
+    depends_on:
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo
+    volumes:
+      - //DESKTOP-JRKF0CL/mongo:/data/db
+    ports:
+      - 27017:27017
