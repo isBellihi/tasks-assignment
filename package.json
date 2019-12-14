@@ -4,7 +4,7 @@
     "description": "��#\u0000 \u0000t\u0000a\u0000s\u0000k\u0000s\u0000-\u0000a\u0000s\u0000s\u0000i\u0000g\u0000n\u0000m\u0000e\u0000n\u0000t\u0000\r\u0000 \u0000",
     "main": "index.js",
     "scripts": {
-        "start": "node index.js",
+        "start": "pm2 start index.js -i max",
         "test": "jest"
     },
     "jest": {

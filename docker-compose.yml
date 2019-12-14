@@ -3,7 +3,7 @@ version: "2.1"
 services:
   tasks-assignment:
     container_name: tasks-assignment
-    image: tasks-assignment
+    image: bedock/tasks-assignment
     build: .
     environment:
       NODE_ENV: production
