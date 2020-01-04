@@ -4,7 +4,9 @@ services:
   tasks-assignment:
     container_name: tasks-assignment
     image: bedock/tasks-assignment
-    build: .
+    build:
+      context: .
+      dockerfile: dockerFile
     environment:
       NODE_ENV: production
     ports:
